@@ -5,21 +5,21 @@
 class Lazyjust < Formula
   desc "A lazy TUI for just — browse, search, and run recipes without memorizing commands"
   homepage "https://github.com/nickhartjes/lazyjust"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.3.0/lazyjust_0.3.0_darwin_amd64.tar.gz"
-      sha256 "f1c6c6d94669404e6b7906ddfca65eb802b4bdb23b0088568194df5781dae6d0"
+      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.4.0/lazyjust_0.4.0_darwin_amd64.tar.gz"
+      sha256 "62c2b59b100208fb1428092085d7a06d86d20fa254b5386cc1f3df1a5bfdc81e"
 
       define_method(:install) do
         bin.install "lazyjust"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.3.0/lazyjust_0.3.0_darwin_arm64.tar.gz"
-      sha256 "60c1f4096e8fa2ad417327328d6b63bd8f5486ae01171f8967e1c0195ff00c28"
+      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.4.0/lazyjust_0.4.0_darwin_arm64.tar.gz"
+      sha256 "33e759e1cefdb773155020ed49f5019320bc2d8a721c7f0659a09ae81925dad3"
 
       define_method(:install) do
         bin.install "lazyjust"
@@ -29,15 +29,15 @@ class Lazyjust < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.3.0/lazyjust_0.3.0_linux_amd64.tar.gz"
-      sha256 "a1003cbdc52b7a196f5cd3e9ec9c74e3b7153738fef7c415baa5629e3315c969"
+      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.4.0/lazyjust_0.4.0_linux_amd64.tar.gz"
+      sha256 "828829fca7ed0bd1524dc0c7aa4c4ce7c647eb51100c52554bc410eea060c532"
       define_method(:install) do
         bin.install "lazyjust"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.3.0/lazyjust_0.3.0_linux_arm64.tar.gz"
-      sha256 "f7782b83ea6062c88f5401a49aaf52dfc78ccb8a9bd26ebb16bc415701b62af9"
+      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.4.0/lazyjust_0.4.0_linux_arm64.tar.gz"
+      sha256 "3dbf2c0de378d31e0173cebf2f536c8309e43e47baca90fa22913086c862f518"
       define_method(:install) do
         bin.install "lazyjust"
       end
