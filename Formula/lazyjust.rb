@@ -4,28 +4,28 @@
 class Lazyjust < Formula
   desc "Lazy TUI for just — browse, search, and run recipes without memorizing commands"
   homepage "https://github.com/nickhartjes/lazyjust"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.2.3/lazyjust-v0.2.3-x86_64-apple-darwin.tar.gz"
-      sha256 "a64353aa41a95676c369c98067e6635e82d01cc12358bcfabce336d80c341a17"
+      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.2.4/lazyjust-v0.2.4-x86_64-apple-darwin.tar.gz"
+      sha256 "7faad8f851104ab13e9dd3c6a3ff1301e0065ce09cd2efdbd844c9852915f8db"
     end
     on_arm do
-      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.2.3/lazyjust-v0.2.3-aarch64-apple-darwin.tar.gz"
-      sha256 "9ebf59c954ff066a36ae60d5e1882c59b3d87921f2525151d99cb5b3157ad184"
+      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.2.4/lazyjust-v0.2.4-aarch64-apple-darwin.tar.gz"
+      sha256 "2dcf1e1b596156106136f164b226163a3fe12534e790907534382f97d25ea18c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.2.3/lazyjust-v0.2.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8e93065ef6599513f06fa623d2697d45aa8e6b0b3f39e08291e9525d99787dfa"
+      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.2.4/lazyjust-v0.2.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b498b90a7beda04994a9bb4bec8414a88d3addb9e754f6e77a8749be365bc569"
     end
     on_arm do
-      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.2.3/lazyjust-v0.2.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "600c8366baca409a6b70fb7bb1cc3028138f1a29b5db67fda145236fc278c659"
+      url "https://github.com/nickhartjes/lazyjust/releases/download/v0.2.4/lazyjust-v0.2.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d1c4e6e992ec526a06484b94b88951e4d25287112584bb627f6f2018531afeea"
     end
   end
 
