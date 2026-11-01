@@ -1,9 +1,9 @@
 cask "specdeck" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.0.0"
-  sha256 arm:   "9bc2b558f80671cef34699c143d5b7b0011e2859025a9c1589cd75cf881d44c0",
-         intel: "1094c4b6adef23f11d6dab1dd5dd338676728d5ff6c5c2c5d953772062bb733b"
+  version "1.0.1"
+  sha256 arm:   "a4716a5a38a98aa50ecc330b96f59a5aeae7a7545e7ec04b92e9fa2410eb3cc8",
+         intel: "13f3db4b9e2a21cf15a123cb7c1a18d267729755c6844b04c9b7398d3da68ecd"
 
   url "https://github.com/nickhartjes/specdeck/releases/download/v#{version}/SpecDeck-#{arch}.dmg"
   name "SpecDeck"
