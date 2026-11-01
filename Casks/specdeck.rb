@@ -1,9 +1,9 @@
 cask "specdeck" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.0.1"
-  sha256 arm:   "a4716a5a38a98aa50ecc330b96f59a5aeae7a7545e7ec04b92e9fa2410eb3cc8",
-         intel: "13f3db4b9e2a21cf15a123cb7c1a18d267729755c6844b04c9b7398d3da68ecd"
+  version "1.1.0"
+  sha256 arm:   "9251edbd67c601e3cd7e6cda451ffce513a33cd2b5e12ac1d5f59480f8811744",
+         intel: "9ae42b1d46dd0bb3b0a9d5d9aa147e47223f78a5dfd265511d4bc6550455af8a"
 
   url "https://github.com/nickhartjes/specdeck/releases/download/v#{version}/SpecDeck-#{arch}.dmg"
   name "SpecDeck"
@@ -15,7 +15,7 @@ cask "specdeck" do
     strategy :github_latest
   end
 
-  depends_on :macos
+  depends_on macos: ">= :big_sur"
 
   app "SpecDeck.app"
 
