@@ -1,9 +1,9 @@
 cask "specdeck" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.1.0"
-  sha256 arm:   "9251edbd67c601e3cd7e6cda451ffce513a33cd2b5e12ac1d5f59480f8811744",
-         intel: "9ae42b1d46dd0bb3b0a9d5d9aa147e47223f78a5dfd265511d4bc6550455af8a"
+  version "1.2.0"
+  sha256 arm:   "22ed0e83d5dd7a412e335ec2bfaf0f39b035d34c7d47e60178df9f537d733908",
+         intel: "26ac0202a1be9c5adf370c6709d1fd398d12c5238b43b9a3cb02c0c37cca34f3"
 
   url "https://github.com/nickhartjes/specdeck/releases/download/v#{version}/SpecDeck-#{arch}.dmg"
   name "SpecDeck"
@@ -15,6 +15,8 @@ cask "specdeck" do
     strategy :github_latest
   end
 
+  # The app updates itself (auto-update design decision 5); brew upgrade --greedy still works.
+  auto_updates true
   depends_on macos: :big_sur
 
   app "SpecDeck.app"
