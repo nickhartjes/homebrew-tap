@@ -1,9 +1,9 @@
 cask "specdeck" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.3.0"
-  sha256 arm:   "70a779222630780852702bfe9014db24478880397e3796ea499e29e8d409028a",
-         intel: "d073860e64e6cd0219747ec6773fcb99fc9e72afd7be755f96dea3a58ebc4d92"
+  version "1.4.0"
+  sha256 arm:   "4e91520543eee9100f7463ef70ef6a268c352d6e2465e82de4d1dbcdd527ff68",
+         intel: "e94a637d04c40ddd340ae33e7495e4c7f1f4521968f37ba9d440551273c9e29f"
 
   url "https://github.com/nickhartjes/specdeck/releases/download/v#{version}/SpecDeck-#{arch}.dmg"
   name "SpecDeck"
@@ -21,7 +21,12 @@ cask "specdeck" do
 
   app "SpecDeck.app"
 
+  # Releases up to 1.3 used the identifier com.entrnce.specdeck; upgraded installs keep its folders.
   zap trash: [
+    "~/Library/Application Support/nl.nickhartjes.specdeck",
+    "~/Library/Caches/nl.nickhartjes.specdeck",
+    "~/Library/Saved Application State/nl.nickhartjes.specdeck.savedState",
+    "~/Library/WebKit/nl.nickhartjes.specdeck",
     "~/Library/Application Support/com.entrnce.specdeck",
     "~/Library/Caches/com.entrnce.specdeck",
     "~/Library/Saved Application State/com.entrnce.specdeck.savedState",
